@@ -660,7 +660,8 @@ footer .container {
 
 .input-label:focus-within .name-input,
 .input-label:focus-within .phone-input,
-.input-label:focus-within .email-input {
+.input-label:focus-within .email-input,
+.comment-label:focus-within .comment-input {
     border: 1px solid var(--button-clr);
 }
 
@@ -689,12 +690,12 @@ footer .container {
     margin-top: 16px;
     margin-bottom: 24px;
 }
-
+/*
 .privacy-policy-checkbox {
     width: 16px;
     height: 16px;
 }
-
+*/
 .privacy-policy-text {
     color: #757575;
 }
