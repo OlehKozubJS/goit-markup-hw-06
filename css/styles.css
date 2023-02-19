@@ -703,6 +703,12 @@ label {
     margin-bottom: 4px;
 }
 
+.name-input-container,
+.phone-input-container,
+.email-input-container {
+    position: relative;
+}
+
 .name-input,
 .phone-input,
 .email-input {
@@ -710,21 +716,47 @@ label {
     width: 100%;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    background-image: url(../images/icons.svg#name-icon);
+    padding-left: 38px;
 }
-/**
-.name-input::placeholder {
+
+.name-icon {
+    position: absolute;
+    top: 14px;
+    left: 19px;
     height: 12px;
     width: 12px;
-    content: "hello" /*url(../images/icons.svg#name-icon)*;
     fill: var(--headline-clr);
 }
-/**/
-.input-label:focus-within .name-input,
-.input-label:focus-within .phone-input,
-.input-label:focus-within .email-input,
+
+.phone-icon {
+    position: absolute;
+    top: 13px;
+    left: 19px; 
+    height: 13px;
+    width: 13px;
+    fill: var(--headline-clr);
+}
+
+.email-icon {
+    position: absolute;
+    top: 14px; 
+    left: 18px;
+    height: 12px;
+    width: 15px;
+    fill: var(--headline-clr);
+}
+
+.name-label:focus-within .name-input,
+.phone-label:focus-within .phone-input,
+.email-label:focus-within .email-input,
 .comment-label:focus-within .comment-input {
     border: 1px solid var(--button-clr);
+}
+
+.name-label:focus-within .name-icon,
+.phone-label:focus-within .phone-icon,
+.email-label:focus-within .email-icon {
+    fill: var(--button-clr);
 }
 
 .comment-label {
