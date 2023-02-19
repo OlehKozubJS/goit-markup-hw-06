@@ -270,7 +270,6 @@ footer .container {
 }
 /**/
 .subscribe-icon {
-    content: url(../images/icons.svg#send-icon);
     margin-left: 16px;
     height: 20px;
     width: 24px;
@@ -603,6 +602,10 @@ footer .container {
 
 /* Common */
 
+.modal-window * {
+    box-sizing: border-box;
+}
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -665,10 +668,6 @@ footer .container {
 
 /* Form elements */
 
-.modal-window-main * {
-    box-sizing: border-box;
-}
-
 .form-headline {
     font-size: 16px;
     font-weight: 500;
@@ -679,26 +678,28 @@ footer .container {
     margin-bottom: 14px;
 }
 
+label {
+    display: block;
+}
+
 .name-text,
 .privacy-policy-label {
     font-size: 12px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1.33;
     letter-spacing: 0.04em;
     color: var(--customer-logo-color);
 }
 
-.name-text {
-    margin-bottom: 4px;
-}
-
-.input-text {
+.phone-text,
+.email-text,
+.comment-text {
+    margin-top: 8px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1;
     letter-spacing: 0.01em;
     color: var(--customer-logo-color);
-    margin-top: 8px;
     margin-bottom: 4px;
 }
 
@@ -706,12 +707,19 @@ footer .container {
 .phone-input,
 .email-input {
     height: 40px;
-    width: 360px;
+    width: 100%;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    margin-top: 0px;
+    background-image: url(../images/icons.svg#name-icon);
 }
-
+/**
+.name-input::placeholder {
+    height: 12px;
+    width: 12px;
+    content: "hello" /*url(../images/icons.svg#name-icon)*;
+    fill: var(--headline-clr);
+}
+/**/
 .input-label:focus-within .name-input,
 .input-label:focus-within .phone-input,
 .input-label:focus-within .email-input,
@@ -719,14 +727,17 @@ footer .container {
     border: 1px solid var(--button-clr);
 }
 
+.comment-label {
+    margin-bottom: 16px;
+}
+
 .comment-input {
     height: 120px;
-    width: 360px;
+    width: 100%;
     resize: none;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    padding-block: 8px;
-    padding-inline: 16px;
+    padding: 8px 16px;
 }
 
 .comment-input::placeholder {
@@ -741,15 +752,14 @@ footer .container {
 .privacy-policy-label {
     display: flex;
     align-items: center;
-    margin-top: 16px;
     margin-bottom: 24px;
 }
-/*
+
 .privacy-policy-checkbox {
     width: 16px;
     height: 16px;
 }
-*/
+
 .privacy-policy-text {
     color: #757575;
 }
@@ -778,6 +788,8 @@ footer .container {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04;
     color: var(--common-white-color);
     transition: background-color var(--common-animation), box-shadow var(--common-animation);
 }
