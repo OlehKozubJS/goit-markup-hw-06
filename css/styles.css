@@ -678,27 +678,24 @@ footer .container {
 
 label {
     display: block;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .name-text,
 .privacy-policy-label {
-    font-size: 12px;
-    font-weight: 400;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: var(--customer-logo-color);
 }
 
-.phone-text,
-.email-text,
-.comment-text {
+.phone-label,
+.email-label,
+.comment-label {
     margin-top: 8px;
-    font-size: 12px;
-    font-weight: 400;
     line-height: 1;
     letter-spacing: 0.01em;
     color: var(--customer-logo-color);
-    margin-bottom: 4px;
 }
 
 .name-input-container,
@@ -710,6 +707,8 @@ label {
 .name-input,
 .phone-input,
 .email-input {
+    display: block;
+    margin-top: 4px;
     height: 40px;
     width: 100%;
     border-radius: 4px;
