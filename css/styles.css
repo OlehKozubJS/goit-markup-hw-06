@@ -805,12 +805,12 @@ label {
     fill: var(--light-backgrounds-clr);
 }
 
-.checkbox:checked + .checkbox-icon-container {
+.privacy-policy-checkbox:checked + .checkbox-icon-container {
     border: none;
     background-color: var(--button-clr);
 }
 
-.checkbox:checked + .checkbox-icon-container>.checkbox-icon {
+.privacy-policy-checkbox:checked + .checkbox-icon-container>.checkbox-icon {
     display: inherit;
 }
 
