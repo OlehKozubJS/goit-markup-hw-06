@@ -787,12 +787,41 @@ label {
     margin-bottom: 24px;
 }
 
-.privacy-policy-checkbox {
-    width: 16px;
+/**/
+.checkbox {
     height: 16px;
+    width: 16px;
+}
+/**/
+.checkbox-icon-container {
+    height: 16px;
+    width: 16px;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+}
+
+.checkbox-icon {
+    display: none;
+    height: 8px;
+    width: 10px;
+    fill: var(--light-backgrounds-clr);
+}
+
+.checkbox:checked + .checkbox-icon-container {
+    border: none;
+    background-color: var(--button-clr);
+}
+
+.checkbox:checked + .checkbox-icon-container>.checkbox-icon {
+    display: inherit;
 }
 
 .privacy-policy-text {
+    margin-left: 4px;
     color: #757575;
 }
 

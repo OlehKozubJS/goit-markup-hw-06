@@ -477,7 +477,7 @@
             <div class="modal-window-main">
                 <h1 class="form-headline">Leave your contacts and we will call you back</h1>
                 <form>
-                    <label class="name-label" for="">
+                    <label class="name-label" for="name-input">
                         <p class="name-text">Name</p>
                         <div class="name-input-container">
                             <input class="name-input" name="name-in" type="text">
@@ -487,7 +487,7 @@
                         </div>
                     </label>
 
-                    <label class="phone-label" for="">
+                    <label class="phone-label" for="phone-input">
                         <p class="phone-text">Phone</p>
                         <div class="phone-input-container">
                             <input class="phone-input" name="phone-in" type="tel">
@@ -497,7 +497,7 @@
                         </div>
                     </label>
 
-                    <label class="email-label" for="">
+                    <label class="email-label" for="email-input">
                         <p class="email-text">Email</p>
                         <div class="email-input-container">
                             <input class="email-input" name="email-in" type="email">
@@ -507,13 +507,19 @@
                         </div>
                     </label>
 
-                    <label class="comment-label" for="">
+                    <label class="comment-label" for="comment-text">
                         <p class="comment-text">Comment</p>
                         <textarea class="comment-input" name="comment-in" type="text" placeholder="Text input" ></textarea>
                     </label>
                     
-                    <label class="privacy-policy-label" for="">
-                        <input class="privacy-policy-checkbox" name="accept" type="checkbox">I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a>
+                    <label class="privacy-policy-label" for="checkbox">
+                        <input class="checkbox visually-hidden" id="checkbox" name="accept" type="checkbox">
+                        <div class="checkbox-icon-container">
+                            <svg class="checkbox-icon">
+                                <use href="./images/icons.svg#checkbox-icon"></use>
+                            </svg>                           
+                        </div>                   
+                        <p class="privacy-policy-text">I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a></p>
                     </label>
 
                     <label class="send-label" for="">
