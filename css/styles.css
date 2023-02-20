@@ -761,6 +761,7 @@ label {
 }
 
 .comment-input {
+    margin-top: 4px;
     height: 120px;
     width: 100%;
     resize: none;
