@@ -227,11 +227,11 @@ footer .container {
     background-color: var(--footer-icon-active-color);
 }
 
-.footer-subscribe-section {
+.footer-subscribe-form {
     margin-left: 80px;
 }
 
-.footer-subscribe-form {
+.footer-subscribe-label {
     display: flex;
 }
 
@@ -253,7 +253,6 @@ footer .container {
     line-height: 24px;
     letter-spacing: 0.04em;
     text-align: left;
-
 }
 
 .subscribe-button {
@@ -625,6 +624,7 @@ footer .container {
 }
 
 .modal-window {
+    position: relative;
     box-sizing: border-box;
     width: 408px;
     height: 584px;
@@ -637,20 +637,17 @@ footer .container {
 
 /* Close Button */
 
-.modal-window-header {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 24px;
-}
-
 .modal-window-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 24px;
     height: 24px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(89, 80, 80, 0.1);
     border-radius: 50%;
     background: var(--accent-and-footer-text-clr);
     transition: background-color var(--common-animation);
@@ -669,6 +666,7 @@ footer .container {
 /* Form elements */
 
 .form-headline {
+    margin-top: 48px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.02em;

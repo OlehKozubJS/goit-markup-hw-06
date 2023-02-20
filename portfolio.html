@@ -287,12 +287,10 @@
                 </ul>
             </div>
 
-            <div class="footer-subscribe-section">
-                <h2 class="footer-social-media-headline">Subscribe</h2>
-                <form class="footer-subscribe-form">
-                    <label class="input-label" for="">
-                        <input class="footer-email-input" name="email-in" type="email" placeholder="E-mail">
-                    </label>
+            <form class="footer-subscribe-form">
+                <label class="footer-social-media-headline">Subscribe</label>
+                <label class="footer-subscribe-label" for="email-subscribe">
+                    <input class="footer-email-input" name="email-in" type="email" placeholder="E-mail" id="email-subscribe" required>
 
                     <button class="subscribe-button" type="submit">
                         <p>Subscribe</p>
@@ -300,9 +298,8 @@
                             <use href="./images/icons.svg#send-icon"></use>
                         </svg>
                     </button>
-                </form>
-            </div>
-        </div>
+                </label>
+            </form>
     </footer>
 
     <script src="./script.js"></script>
