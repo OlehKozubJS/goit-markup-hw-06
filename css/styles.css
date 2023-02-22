@@ -267,14 +267,14 @@ footer .container {
     transition: background-color var(--common-animation);
     color: var(--common-white-color);
 }
-/**/
+
 .subscribe-icon {
     margin-left: 16px;
     height: 20px;
     width: 24px;
     fill: var(--common-white-color);
 }
-/**/
+
 .subscribe-button:hover,
 .subscribe-button:focus {
     background-color: var(--hover-focus-clr);
