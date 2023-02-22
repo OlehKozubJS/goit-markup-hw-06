@@ -233,11 +233,7 @@ footer .container {
     margin-left: 80px;
     display: flex;
 }
-/*
-.footer-subscribe-label {
-    display: flex;
-}
-*/
+
 .footer-email-input {
     box-sizing: border-box;
     height: 40px;
