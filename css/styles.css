@@ -231,12 +231,13 @@ footer .container {
 
 .footer-subscribe-form {
     margin-left: 80px;
+    display: flex;
 }
-
+/*
 .footer-subscribe-label {
     display: flex;
 }
-
+*/
 .footer-email-input {
     box-sizing: border-box;
     height: 40px;
@@ -261,6 +262,7 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
     margin-left: 24px;
     height: 40px;
     width: 165px;
